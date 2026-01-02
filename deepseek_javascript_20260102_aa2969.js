@@ -1,0 +1,6 @@
+// Add your API endpoints in config/dataSources.json
+{
+  "niftyFutures": "https://your-api.com/nifty",
+  "optionChain": "https://your-api.com/options",
+  "marketNews": "https://your-api.com/news"
+}

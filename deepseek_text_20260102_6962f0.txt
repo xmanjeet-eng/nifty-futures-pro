@@ -1,0 +1,73 @@
+
+## **File 4: `config/settings.json`**
+```json
+{
+  "app": {
+    "name": "Nifty Futures Pro",
+    "version": "2.0.0",
+    "author": "Trading Pro Team",
+    "description": "Professional Nifty 50 Futures Trading System"
+  },
+  "trading": {
+    "defaultCapital": 100000,
+    "defaultRiskPercent": 1,
+    "defaultStopLossPercent": 1,
+    "minLotSize": 50,
+    "marginRequired": 15,
+    "brokerage": 20,
+    "taxes": {
+      "stt": 0.01,
+      "transaction": 0.00325,
+      "gst": 0.18,
+      "sebi": 0.000001
+    }
+  },
+  "indicators": {
+    "rsi": {
+      "period": 14,
+      "overbought": 70,
+      "oversold": 30
+    },
+    "ema": {
+      "periods": [9, 20, 50, 200]
+    },
+    "macd": {
+      "fast": 12,
+      "slow": 26,
+      "signal": 9
+    },
+    "bollinger": {
+      "period": 20,
+      "stdDev": 2
+    }
+  },
+  "signals": {
+    "confidenceThreshold": 60,
+    "minRiskReward": 2,
+    "volumeConfirmation": true,
+    "timeframes": ["5m", "15m", "1h", "1d"]
+  },
+  "alerts": {
+    "price": true,
+    "volume": true,
+    "breakout": true,
+    "news": true,
+    "sound": true
+  },
+  "ui": {
+    "theme": "auto",
+    "chartTheme": "light",
+    "autoRefresh": true,
+    "refreshInterval": 30000,
+    "showOrderBook": true,
+    "showNews": true,
+    "showHeatMap": true
+  },
+  "data": {
+    "primarySource": "nse",
+    "fallbackSource": "yahoo",
+    "updateInterval": 5000,
+    "cacheDuration": 300,
+    "retryAttempts": 3
+  }
+}

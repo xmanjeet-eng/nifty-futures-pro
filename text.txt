@@ -1,0 +1,2 @@
+Position Size = (Capital × Risk%) ÷ (Entry - Stop Loss)
+Lots = Position Size ÷ Lot Size

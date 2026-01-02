@@ -1,0 +1,7 @@
+{
+  "refreshInterval": 30000,
+  "defaultRisk": 1,
+  "defaultStopLoss": 1,
+  "theme": "light",
+  "indicators": ["RSI", "MACD", "EMA"]
+}
